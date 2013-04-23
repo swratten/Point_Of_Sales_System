@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/thebusiness.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxvalidator.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxcombobox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqxgrid.columnsresize.js"></script>
+    <link type="text/css" href="css/cupertino/jquery-ui-1.8.23.custom.css" rel="Stylesheet" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.classic.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.dropdown.css" type="text/css" />
+    <link rel="stylesheet" href="jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+	<header>
+		
+	</header>
+      <nav>
+        <nav id="nav_center">
+          <ul>
+            <li>
+              <a href="#" id="home">Home</a>
+            </li>
+            <li>
+              <a href="#" id="pdialog_link">Purchases</a>
+            </li>
+            <li>
+              <a href="#" id="dialog_link">Product List</a>
+            </li>
+            <li>
+              <a href="#" id="new_prods">New Products</a>
+            </li>
+            <li>
+              <a href="#" id="list_purchases">List Purchases</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+      <div id="total">
+        <h1>Total Price:</h1>
+        <input type="textbox" id="id" />
+        <input type="textbox" id="pid" />
+		<button id="new">New Purchase</button>
+      </div>
+      <div id="search">
+        <p>Search:</p>
+        <input type="textbox" id="searchField" onclick="searching=true;" />
+      </div>
+      <div id="listbox" style="font-family: 'verdana'; font-size:9pt;"></div>
+      <div id="ContentPanel" style="1px black solid; font-family: 'verdana'; font-size:9pt;"></div>
+      <div id="Calendar">
+        <p style="float: left; margin-top: 3px;">Date:</p>
+        <input id="datepicker" type="text" class="prod" style="float: left;" />
+		<p id="daySales" style="float: left; margin-top: 3px; margin-left:5px;">Total Day Sales:</p>
+        <br />
+        <br />
+        <div id="ordergrid"></div>
+        <br />
+        <div id="cal_grid"></div>
+      </div>
+      <br />
+      <div id="payment" style="font-family: 'verdana'; font-size:9pt;">
+      <h2>Payment Options:</h2>
+      <input type="button" id="void" value="Void Transaction" /> 
+      <label style="float: left; margin-top: 2px;">
+      <input type="checkbox" id="eftpos"
+      onclick="if($('#cash').is(':checked')){$('#cash').attr('checked',false);}" />Eftpos</label> 
+      <label style="float: left; margin-top: 2px;">
+      <input type="checkbox" id="cash"
+      onclick="if($('#eftpos').is(':checked')){$('#eftpos').attr('checked',false);}" />Cash</label>
+      <br />
+      <p id="remaining">Remaining balance:</p>
+      <br />
+      <input type="textbox" id="amount" style="height:15px; margin-top:3px;" />
+      <input type="button" id="enter" value="Enter" /></div>
+      <div id="newProd"></div>
+      <div id="pics"></div>
+    </div>
+  </body>
+</html>

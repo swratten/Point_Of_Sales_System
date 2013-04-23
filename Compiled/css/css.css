@@ -1,0 +1,298 @@
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video 
+	{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section 
+	{
+		display: block;
+    }
+    body 
+	{
+		line-height: 1;
+		font-family:"verdana";
+		overflow:hidden;
+    }
+	body,html
+	{
+		height:100%;
+	}
+    ol, ul 
+	{
+		list-style: none;
+    }
+    blockquote, q 
+	{
+		quotes: none;
+    }
+		blockquote:before, blockquote:after,
+		q:before, q:after 
+	{
+		content: '';
+		content: none;
+    }
+    table 
+	{
+		border-collapse: collapse;
+		border-spacing: 0;
+    }
+	#container
+	{
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.25)), color-stop(100%,rgba(88,83,252,0.5)));
+		width:100%;
+		height:100%;
+		overflow:hidden;
+	}
+	#listbox
+	{
+		position:relative;
+		z-index:2000;
+		clear:both;
+		float:left;
+		height:95%;
+		width: 20%;
+	}
+	#ContentPanel
+	{
+		background-color:transparent;
+		width:55%;
+		height:95%;
+		overflow:hidden;
+		float:left;
+	}
+	::-webkit-scrollbar {  
+    display: none;
+  }  
+	#payment label {
+    display: inline-block;
+	}
+	#Calendar label
+	{
+		display: inline-block;
+		text-align: left;
+	}
+	#total h1, input
+	{
+		float:left;
+	}
+	#total h1
+	{
+		padding-top:2px;
+	}
+	#new
+	{
+		background-color:rgba(0,0,0,0.5);
+		-khtml-border-radius:3px;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.22)), color-stop(100%,rgba(88,83,252,0.32)));
+	}
+	#total input
+	{
+		padding-left:10px;
+		width: 6.9%;
+		border: none;
+	}
+	#total
+	{
+		position:relative;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.03)), color-stop(100%,rgba(88,83,252,0.03)));
+		width:30%;
+		-khtml-border-radius:3px;
+		border: 1px solid #BCBCBC;
+		float: left;
+		overflow:hidden;
+	}
+	#total input
+	{
+		width:50px;
+		background-color:rgba(0,0,0,0.5);
+		-khtml-border-radius:3px;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.22)), color-stop(100%,rgba(88,83,252,0.1)));
+	}
+	#payment
+	{	
+		position:absolute;
+		padding-left:32%;
+		padding-top:26%;
+		/*margin-right:50px;*/
+		float: left;
+		overflow:hidden;
+		z-index:1000;
+	}
+	#payment p
+	{
+		float:left;
+	}
+	#payment input
+	{
+		background-color:rgba(0,0,0,0.5);
+		-khtml-border-radius:3px;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.22)), color-stop(100%,rgba(88,83,252,0.32)));
+	
+	}
+	#search
+	{
+		-khtml-border-radius:3px;
+		border: 1px solid #BCBCBC;
+		width:30%;
+		clear:both;
+		float:left;
+		overflow:hidden;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.25)), color-stop(100%,rgba(88,83,252,0.45)));
+	}
+	#search input
+	{
+		margin-left:8px;
+		width:146px;
+		float:left;
+		background-color:rgba(0,0,0,0.5);
+		-khtml-border-radius:3px;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.22)), color-stop(100%,rgba(88,83,252,0.32)));
+	}
+	#search p
+	{
+		padding-left:2px;
+		padding-top:4px;
+		float:left;
+	}
+	/*#image
+	{
+		overflow:hidden;
+		float:left;
+		border: 1px black solid;
+	}*/
+	.text-input
+        {
+		height: 21px;
+		width: 150px;
+    }
+    .register-table
+        {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .register-table td, tr
+        {
+        margin: 0px;
+        padding: 2px;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        font-family: Verdana;
+        font-size: 12px;
+    }
+	header
+	{
+			padding:0;
+			margin:0;
+			width:100%;
+			height:20%;
+			background:url(../images/Banner.jpg);
+			background-size: 100%;
+			border-bottom:1px solid black;
+	}
+	nav
+	{
+		width:100%;
+		height:33px;
+		background-image:url(../images/grad.png);
+		background-repeat:repeat-x;
+	}
+	#nav_center
+	{
+		width:100%;
+		text-align:center;
+	}
+	#nav_center li
+	{
+		display:inline;
+	}
+	#nav_center ul
+	{
+		display:inline-block;
+	}
+	#newProd input
+	{
+		border: 1px #6B68F9 solid;
+	}
+	.prod
+	{
+		background-color:rgba(0,0,0,0.5);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.22)), color-stop(100%,rgba(88,83,252,0.32)));
+	}
+	#newProd 
+	{
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(88,83,252,0.15)), color-stop(100%,rgba(88,83,252,0.35)));
+		margin-top:10px;
+		-khtml-border-radius:3px;
+		border: 1px #6B68F9 solid;
+		width: 480px;
+		height:230px;
+		margin-left:50px;
+		float:left;
+	}
+	#newProd form
+	{
+		float:left;
+		padding-top:10px;
+		padding-left:20px;
+	}
+	#pics
+	{
+		float:left;
+		overflow:hidden;
+	}
+	/*#pics img:hover
+	{
+		border: 2px blue solid;
+	}*/
+	#pics img
+	{
+		margin-left: 10px;
+	}
+	.selected
+	{
+		border: 5px green solid;
+	}
+	nav ul
+	{
+		list-style:none;
+	}
+	nav a
+	{
+		display:inline;
+		float:left;
+		text-decoration:none;
+		color:#fff;
+		font-weight:bold;
+		font-family:"Agency FB","Verdana";
+		font-size:15pt;
+		padding: 5px 18px 5px 18px;
+	}
+	
+	nav a:hover
+	{
+		height:23px;
+		background-image:url(../images/grad-invert.png);
+	}
+	
+	.textbox
+	{
+		border:none;
+	}
